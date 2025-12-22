@@ -1,0 +1,29 @@
+{
+  "name": "joele-elektriciteit",
+  "version": "1.0.0",
+  "description": "Moderne, responsive website voor Joele Elektriciteit - professionele elektriciteitswerken in Oudenaarde en de Vlaamse Ardennen.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdksolutionsbe/website-joele.git"
+  },
+  "keywords": [
+    "elektricien",
+    "oudenaarde",
+    "vlaamse-ardennen",
+    "website"
+  ],
+  "author": "Joele Elektriciteit",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sdksolutionsbe/website-joele/issues"
+  },
+  "homepage": "https://www.joele.be",
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}

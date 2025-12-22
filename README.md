@@ -4,15 +4,41 @@ Moderne, responsive website voor Joele Elektriciteit - professionele elektricite
 
 ## Quick Start
 
-### Lokaal bekijken
-Open `index.html` in een browser, of gebruik een lokale server:
+### Installatie
+
+```bash
+# Clone de repository
+git clone https://github.com/sdksolutionsbe/website-joele.git
+cd website-joele
+
+# Installeer dependencies
+npm install
+```
+
+### Development (met Vite)
+
+```bash
+# Start development server met hot reload
+npm run dev
+```
+
+Dit opent automatisch de browser op `http://localhost:3000` met live reloading.
+
+### Production Build
+
+```bash
+# Maak een productie build
+npm run build
+
+# Preview de productie build lokaal
+npm run preview
+```
+
+### Alternatieve Methodes (zonder npm)
 
 ```bash
 # Met Python
 python -m http.server 8000
-
-# Met Node.js (npx)
-npx serve
 
 # Met VS Code
 # Installeer "Live Server" extensie en klik "Go Live"
@@ -30,9 +56,11 @@ npx serve
 ## Projectstructuur
 
 ```
-Website - Joele/
+website-joele/
 ├── index.html              # Hoofdpagina
 ├── success.html            # Bedankpagina na formulier
+├── package.json            # NPM configuratie
+├── vite.config.js          # Vite configuratie
 ├── netlify.toml            # Netlify configuratie
 ├── .env.example            # Environment variabelen template
 ├── .gitignore              # Git ignore regels
@@ -45,12 +73,16 @@ Website - Joele/
 │   │   └── main.js         # JavaScript functionaliteit
 │   └── images/             # Afbeeldingen (toe te voegen)
 │
+├── images/
+│   └── favicon.svg         # Browser tab icon
+│
 ├── functions/
 │   └── contact-form.js     # Netlify serverless function
 │
 └── Documentatie/
-    ├── VERGELIJKINGSRAPPORT.md    # Vergelijking oude vs nieuwe site
-    └── VERBETERPUNTEN-EN-TIPS.md  # Aanbevelingen en tips
+    ├── TODO.md                   # Takenlijst
+    ├── VERGELIJKINGSRAPPORT.md   # Vergelijking oude vs nieuwe site
+    └── VERBETERPUNTEN-EN-TIPS.md # Aanbevelingen en tips
 ```
 
 ## Features

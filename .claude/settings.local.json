@@ -3,7 +3,14 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Moderne Joele Elektriciteit website\n\nFeatures:\n- Modern responsive design \\(mobile-first\\)\n- Contactformulier met reCAPTCHA beveiliging\n- SEO geoptimaliseerd met structured data en geo tags\n- Netlify deployment configuratie\n- Serverless function voor formulierverwerking\n\nDocumentatie:\n- Vergelijkingsrapport oude vs nieuwe website\n- Verbeterpunten en tips\n- Complete TODO lijst\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(cat:*)"
     ]
   }
 }
