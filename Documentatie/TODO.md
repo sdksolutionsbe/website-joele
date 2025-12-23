@@ -29,11 +29,13 @@
 - [ ] [!] Site Key kopiëren naar `index.html` (vervang `YOUR_RECAPTCHA_SITE_KEY`)
 - [ ] [!] Secret Key bewaren voor Netlify environment variables
 
-### Afbeeldingen (Kritisch)
-- [ ] [!] Profielfoto Joeri Maes (800x1000px, professioneel)
-- [ ] [!] Logo in hoge resolutie of SVG formaat
-- [ ] [!] Favicon aanpassen met officieel logo (indien beschikbaar)
-- [ ] [!] OG Image voor social sharing (1200x630px met logo/tagline)
+### Afbeeldingen (Kritisch) - Plaats in /images/ map
+- [ ] [!] **favicon.png** - Reeds geplaatst (check of correct)
+- [ ] [!] **apple-touch-icon.png** (180x180px) - Voor iOS apparaten
+- [ ] [!] **og-image.jpg** (1200x630px) - Voor social sharing (Facebook, LinkedIn)
+- [ ] [!] **logo.png** (200x60px of groter) - Officieel Joele logo
+- [ ] [!] **joeri-maes.jpg** (800x1000px) - Profielfoto voor "Over Ons" sectie
+- [ ] [!] **hero-bg.jpg** (1920x1080px) - Optioneel: achtergrond voor hero sectie
 
 ### Netlify Deployment
 - [ ] [!] GitHub repository pushen

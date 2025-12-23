@@ -14,9 +14,6 @@
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
     const backToTop = document.getElementById('backToTop');
-    const cookieBanner = document.getElementById('cookieBanner');
-    const cookieAccept = document.getElementById('cookieAccept');
-    const cookieDecline = document.getElementById('cookieDecline');
     const contactForm = document.getElementById('contactForm');
 
     // ==========================================================================
@@ -110,24 +107,18 @@
     // ==========================================================================
     // Cookie Consent
     // ==========================================================================
-    function checkCookieConsent() {
         const consent = localStorage.getItem('cookieConsent');
         if (!consent) {
             setTimeout(() => {
-                cookieBanner.classList.add('visible');
             }, 2000);
         }
     }
 
-    function acceptCookies() {
         localStorage.setItem('cookieConsent', 'accepted');
-        cookieBanner.classList.remove('visible');
         // Initialize analytics or other cookie-dependent features here
     }
 
-    function declineCookies() {
         localStorage.setItem('cookieConsent', 'declined');
-        cookieBanner.classList.remove('visible');
     }
 
     // ==========================================================================
@@ -270,13 +261,7 @@
         }
 
         // Cookie consent
-        if (cookieBanner) {
-            checkCookieConsent();
-            if (cookieAccept) {
-                cookieAccept.addEventListener('click', acceptCookies);
             }
-            if (cookieDecline) {
-                cookieDecline.addEventListener('click', declineCookies);
             }
         }
 

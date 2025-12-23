@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Joele Elektriciteit | Uw Elektricien in Oudenaarde en Omstreken</title>
-    <meta name="title" content="Joele Elektriciteit | Uw Elektricien in Oudenaarde en Omstreken">
+    <title>Elektriciteitswerken voor renovatie, nieuwbouw of zelfplaatsing - Joele Elektriciteit</title>
+    <meta name="title" content="Elektriciteitswerken voor renovatie, nieuwbouw of zelfplaatsing - Joele Elektriciteit">
     <meta name="description" content="Professionele elektriciteitswerken in Oudenaarde en de Vlaamse Ardennen. Renovatie, nieuwbouw, herstellingen en hulp bij zelfplaatsing. Vraag nu een gratis offerte aan!">
     <meta name="keywords" content="elektricien, Oudenaarde, elektriciteitswerken, renovatie, nieuwbouw, elektrische installatie, Vlaamse Ardennen, elektrische keuring, Joele">
     <meta name="author" content="Joele Elektriciteit">
@@ -39,7 +39,7 @@
     <link rel="canonical" href="https://www.joele.be/">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Fonts -->
@@ -613,15 +613,14 @@
                     <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                         <input type="hidden" name="form-name" value="contact">
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Naam *</label>
-                                <input type="text" id="name" name="name" required placeholder="Uw naam">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefoon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Uw telefoonnummer">
-                            </div>
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required placeholder="Uw naam">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefoonnummer *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Uw telefoonnummer">
                         </div>
 
                         <div class="form-group">
@@ -630,15 +629,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="service">Type dienst</label>
-                            <select id="service" name="service">
-                                <option value="">Selecteer een dienst...</option>
-                                <option value="renovatie">Renovatie</option>
-                                <option value="nieuwbouw">Nieuwbouw</option>
-                                <option value="algemeen">Algemene elektriciteit</option>
-                                <option value="zelfplaatsing">Hulp bij zelfplaatsing</option>
-                                <option value="anders">Anders</option>
-                            </select>
+                            <label for="address">Adres *</label>
+                            <input type="text" id="address" name="address" required placeholder="Uw adres">
                         </div>
 
                         <div class="form-group">
@@ -651,15 +643,8 @@
                             <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
                         </div>
 
-                        <div class="form-group form-privacy">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="privacy" required>
-                                <span>Ik ga akkoord met de <a href="#privacy">privacyverklaring</a></span>
-                            </label>
-                        </div>
-
                         <button type="submit" class="btn btn-primary btn-lg btn-block">
-                            <span>Verstuur Bericht</span>
+                            <span>Verstuur</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="22" y1="2" x2="11" y2="13"/>
                                 <polygon points="22,2 15,22 11,13 2,9"/>
@@ -749,18 +734,7 @@
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-content">
-            <p>Deze website gebruikt cookies om uw ervaring te verbeteren. Door verder te surfen gaat u akkoord met ons cookiebeleid.</p>
-            <div class="cookie-buttons">
-                <button class="btn btn-sm btn-outline" id="cookieDecline">Weigeren</button>
-                <button class="btn btn-sm btn-primary" id="cookieAccept">Accepteren</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Back to Top Button -->
+<!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Terug naar boven">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 19V5M5 12l7-7 7 7"/>
