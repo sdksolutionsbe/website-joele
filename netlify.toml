@@ -7,12 +7,11 @@
   # No build command needed for static site
   command = ""
 
-# Redirects and headers
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
+# Redirects for SPA (not needed for static multi-page site)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
 
 # Form handling
 [build.environment]
