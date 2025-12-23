@@ -695,6 +695,18 @@ ul {
     align-items: center;
 }
 
+.about-image {
+    position: relative;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-2xl);
+    object-fit: cover;
+    box-shadow: var(--shadow-xl);
+}
+
 .about-image-placeholder {
     display: flex;
     flex-direction: column;
