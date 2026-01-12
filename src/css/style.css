@@ -356,14 +356,18 @@ ul {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: var(--space-5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .hero-title .highlight {
     color: var(--color-primary);
+    display: inline-block;
 }
 
 .hero-subtitle {
@@ -1167,6 +1171,8 @@ ul {
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
         height: 100vh;
         height: 100dvh;
@@ -1174,32 +1180,34 @@ ul {
         align-items: center;
         justify-content: center;
         gap: var(--space-6);
-        background: var(--color-white);
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
+        background: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
         z-index: 1101;
     }
 
     .nav-menu.active {
-        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .nav-menu li {
-        opacity: 0;
         transform: translateY(10px);
-        transition: opacity 0.2s ease, transform 0.2s ease;
+        transition: transform 0.2s ease;
     }
 
     .nav-menu.active li {
-        opacity: 1;
         transform: translateY(0);
     }
 
-    .nav-menu.active li:nth-child(1) { transition-delay: 0.1s; }
-    .nav-menu.active li:nth-child(2) { transition-delay: 0.15s; }
-    .nav-menu.active li:nth-child(3) { transition-delay: 0.2s; }
-    .nav-menu.active li:nth-child(4) { transition-delay: 0.25s; }
-    .nav-menu.active li:nth-child(5) { transition-delay: 0.3s; }
+    .nav-menu.active li:nth-child(1) { transition-delay: 0.05s; }
+    .nav-menu.active li:nth-child(2) { transition-delay: 0.1s; }
+    .nav-menu.active li:nth-child(3) { transition-delay: 0.15s; }
+    .nav-menu.active li:nth-child(4) { transition-delay: 0.2s; }
+    .nav-menu.active li:nth-child(5) { transition-delay: 0.25s; }
 
     .nav-menu .nav-link {
         font-size: var(--text-xl);
@@ -1218,7 +1226,7 @@ ul {
         padding: var(--space-3) var(--space-6);
         margin-top: var(--space-4);
         background: var(--color-primary);
-        color: var(--color-white) !important;
+        color: #ffffff !important;
         border-radius: var(--radius-lg);
     }
 
